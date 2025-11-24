@@ -1,0 +1,79 @@
+C:\Users\user>curl http://localhost:5000/search/distributed%20systems
+[
+  {
+    "id": 1,
+    "title": "How to get a good grade in DOS in 40 minutes a day"
+  },
+  {
+    "id": 2,
+    "title": "RPCs for Noobs"
+  }
+]
+
+C:\Users\user>curl http://localhost:5000/info/2
+{
+  "price": 25.0,
+  "quantity": 740,
+  "title": "RPCs for Noobs"
+}
+
+C:\Users\user>curl -X PUT http://localhost:5000/purchase/2
+{
+  "message": "Purchased item 2"
+}
+
+C:\Users\user>curl -X PUT http://localhost:5000/purchase/2
+{
+  "message": "Purchased item 2"
+}
+
+C:\Users\user>curl -X PUT http://localhost:5000/purchase/2
+{
+  "message": "Purchased item 2"
+}
+
+C:\Users\user>curl -X PUT http://localhost:5000/purchase/2
+{
+  "message": "Purchased item 2"
+}
+
+C:\Users\user>curl http://localhost:5000/info/2
+{
+  "price": 25.0,
+  "quantity": 736,
+  "title": "RPCs for Noobs"
+}
+
+C:\Users\user>curl http://localhost:5000/info/1
+{
+  "price": 50.0,
+  "quantity": 738,
+  "title": "How to get a good grade in DOS in 40 minutes a day"
+}
+
+C:\Users\user>curl -X PUT http://localhost:5000/purchase/1
+{
+  "message": "Purchased item 1"
+}
+
+C:\Users\user>curl -X PUT http://localhost:5000/purchase/1
+{
+  "message": "Purchased item 1"
+}
+
+C:\Users\user>curl -X PUT http://localhost:5000/purchase/1
+{
+  "message": "Purchased item 1"
+}
+
+C:\Users\user>curl -X PUT http://localhost:5000/purchase/1
+{
+  "message": "Purchased item 1"
+}
+
+C:\Users\user>curl http://localhost:5000/info/1
+{
+  "price": 50.0,
+  "quantity": 734,
+  "title": "How to get a good grade in DOS in 40 minutes a day"
+}

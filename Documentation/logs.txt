@@ -1,0 +1,86 @@
+ dos-catalog_service  Built
+ dos-order_service  Built
+ dos-frontend_service  Built
+ Network dos_bazar_network  Creating
+ Network dos_bazar_network  Created
+ Container catalog_service  Creating
+ Container catalog_service  Created
+ Container order_service  Creating
+ Container order_service  Created
+ Container frontend_service  Creating
+ Container frontend_service  Created
+Attaching to catalog_service, frontend_service, order_service
+catalog_service  |  * Serving Flask app 'app'
+catalog_service  |  * Debug mode: on
+catalog_service  | WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+catalog_service  |  * Running on all addresses (0.0.0.0)
+catalog_service  |  * Running on http://127.0.0.1:5001
+catalog_service  |  * Running on http://172.18.0.2:5001
+catalog_service  | Press CTRL+C to quit
+catalog_service  |  * Restarting with stat
+catalog_service  |  * Debugger is active!
+catalog_service  |  * Debugger PIN: 517-418-928
+order_service    | Orders database initialized.
+order_service    |  * Serving Flask app 'app'
+order_service    |  * Debug mode: on
+order_service    | WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+order_service    |  * Running on all addresses (0.0.0.0)
+order_service    |  * Running on http://127.0.0.1:5002
+order_service    |  * Running on http://172.18.0.3:5002
+order_service    | Press CTRL+C to quit
+order_service    |  * Restarting with stat
+frontend_service  |  * Serving Flask app 'app'
+frontend_service  |  * Debug mode: on
+frontend_service  | INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+frontend_service  |  * Running on all addresses (0.0.0.0)
+frontend_service  |  * Running on http://127.0.0.1:5000
+frontend_service  |  * Running on http://172.18.0.4:5000
+frontend_service  | INFO:werkzeug:[33mPress CTRL+C to quit[0m
+frontend_service  | INFO:werkzeug: * Restarting with stat
+order_service     | Orders database initialized.
+order_service     |  * Debugger is active!
+order_service     |  * Debugger PIN: 224-428-947
+frontend_service  | WARNING:werkzeug: * Debugger is active!
+frontend_service  | INFO:werkzeug: * Debugger PIN: 750-026-942
+catalog_service   | 172.18.0.4 - - [24/Nov/2025 12:45:30] "GET /search/distributed%20systems HTTP/1.1" 200 -
+frontend_service  | INFO:werkzeug:172.18.0.1 - - [24/Nov/2025 12:45:30] "GET /search/distributed%20systems HTTP/1.1" 200 -
+catalog_service   | 172.18.0.4 - - [24/Nov/2025 12:45:50] "GET /info/2 HTTP/1.1" 200 -
+frontend_service  | INFO:werkzeug:172.18.0.1 - - [24/Nov/2025 12:45:50] "GET /info/2 HTTP/1.1" 200 -
+catalog_service   | 172.18.0.3 - - [24/Nov/2025 12:45:56] "GET /info/2 HTTP/1.1" 200 -
+catalog_service   | 172.18.0.3 - - [24/Nov/2025 12:45:56] "PUT /update/2 HTTP/1.1" 200 -
+order_service     | 172.18.0.4 - - [24/Nov/2025 12:45:56] "PUT /purchase/2 HTTP/1.1" 200 -
+frontend_service  | INFO:werkzeug:172.18.0.1 - - [24/Nov/2025 12:45:56] "PUT /purchase/2 HTTP/1.1" 200 -
+catalog_service   | 172.18.0.3 - - [24/Nov/2025 12:45:57] "GET /info/2 HTTP/1.1" 200 -
+catalog_service   | 172.18.0.3 - - [24/Nov/2025 12:45:57] "PUT /update/2 HTTP/1.1" 200 -
+order_service     | 172.18.0.4 - - [24/Nov/2025 12:45:57] "PUT /purchase/2 HTTP/1.1" 200 -
+frontend_service  | INFO:werkzeug:172.18.0.1 - - [24/Nov/2025 12:45:57] "PUT /purchase/2 HTTP/1.1" 200 -
+catalog_service   | 172.18.0.3 - - [24/Nov/2025 12:45:58] "GET /info/2 HTTP/1.1" 200 -
+catalog_service   | 172.18.0.3 - - [24/Nov/2025 12:45:58] "PUT /update/2 HTTP/1.1" 200 -
+order_service     | 172.18.0.4 - - [24/Nov/2025 12:45:58] "PUT /purchase/2 HTTP/1.1" 200 -
+frontend_service  | INFO:werkzeug:172.18.0.1 - - [24/Nov/2025 12:45:58] "PUT /purchase/2 HTTP/1.1" 200 -
+catalog_service   | 172.18.0.3 - - [24/Nov/2025 12:45:59] "GET /info/2 HTTP/1.1" 200 -
+catalog_service   | 172.18.0.3 - - [24/Nov/2025 12:45:59] "PUT /update/2 HTTP/1.1" 200 -
+order_service     | 172.18.0.4 - - [24/Nov/2025 12:45:59] "PUT /purchase/2 HTTP/1.1" 200 -
+frontend_service  | INFO:werkzeug:172.18.0.1 - - [24/Nov/2025 12:45:59] "PUT /purchase/2 HTTP/1.1" 200 -
+catalog_service   | 172.18.0.4 - - [24/Nov/2025 12:46:01] "GET /info/2 HTTP/1.1" 200 -
+frontend_service  | INFO:werkzeug:172.18.0.1 - - [24/Nov/2025 12:46:01] "GET /info/2 HTTP/1.1" 200 -
+catalog_service   | 172.18.0.4 - - [24/Nov/2025 12:46:10] "GET /info/1 HTTP/1.1" 200 -
+frontend_service  | INFO:werkzeug:172.18.0.1 - - [24/Nov/2025 12:46:10] "GET /info/1 HTTP/1.1" 200 -
+catalog_service   | 172.18.0.3 - - [24/Nov/2025 12:46:18] "GET /info/1 HTTP/1.1" 200 -
+catalog_service   | 172.18.0.3 - - [24/Nov/2025 12:46:18] "PUT /update/1 HTTP/1.1" 200 -
+order_service     | 172.18.0.4 - - [24/Nov/2025 12:46:18] "PUT /purchase/1 HTTP/1.1" 200 -
+frontend_service  | INFO:werkzeug:172.18.0.1 - - [24/Nov/2025 12:46:18] "PUT /purchase/1 HTTP/1.1" 200 -
+catalog_service   | 172.18.0.3 - - [24/Nov/2025 12:46:19] "GET /info/1 HTTP/1.1" 200 -
+catalog_service   | 172.18.0.3 - - [24/Nov/2025 12:46:19] "PUT /update/1 HTTP/1.1" 200 -
+order_service     | 172.18.0.4 - - [24/Nov/2025 12:46:19] "PUT /purchase/1 HTTP/1.1" 200 -
+frontend_service  | INFO:werkzeug:172.18.0.1 - - [24/Nov/2025 12:46:19] "PUT /purchase/1 HTTP/1.1" 200 -
+catalog_service   | 172.18.0.3 - - [24/Nov/2025 12:46:19] "GET /info/1 HTTP/1.1" 200 -
+catalog_service   | 172.18.0.3 - - [24/Nov/2025 12:46:19] "PUT /update/1 HTTP/1.1" 200 -
+order_service     | 172.18.0.4 - - [24/Nov/2025 12:46:19] "PUT /purchase/1 HTTP/1.1" 200 -
+frontend_service  | INFO:werkzeug:172.18.0.1 - - [24/Nov/2025 12:46:19] "PUT /purchase/1 HTTP/1.1" 200 -
+catalog_service   | 172.18.0.3 - - [24/Nov/2025 12:46:20] "GET /info/1 HTTP/1.1" 200 -
+catalog_service   | 172.18.0.3 - - [24/Nov/2025 12:46:20] "PUT /update/1 HTTP/1.1" 200 -
+order_service     | 172.18.0.4 - - [24/Nov/2025 12:46:20] "PUT /purchase/1 HTTP/1.1" 200 -
+frontend_service  | INFO:werkzeug:172.18.0.1 - - [24/Nov/2025 12:46:20] "PUT /purchase/1 HTTP/1.1" 200 -
+catalog_service   | 172.18.0.4 - - [24/Nov/2025 12:46:22] "GET /info/1 HTTP/1.1" 200 -
+frontend_service  | INFO:werkzeug:172.18.0.1 - - [24/Nov/2025 12:46:22] "GET /info/1 HTTP/1.1" 200 -
